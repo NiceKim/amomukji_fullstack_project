@@ -1,20 +1,16 @@
 /* Header/Blog Title */
 * {
   box-sizing: border-box;
+  
 }
 body {
   height: 1000px;
-  padding: 10px;
-  background: #f1f1f1;
+  padding: 5px;
+  background-color: #fcedd0;
+  /*background-color: white;*/
   font-family: Arial;
 }
-h1 {
-  font-size: 50px;
-}
-h2 {
-  margin-top : 10px;
-  margin-bottom: 10px;
-}
+
 /* Header/Blog Title */
 .header {
   padding: 10px;
@@ -27,7 +23,9 @@ h2 {
   color:white;
   text-shadow: 1px 1px 2px white;
 }
-
+h1 {
+  font-size: 50px;
+}
 /* 태그 목록*/
 .topcolumn {
   position: sticky;
@@ -43,12 +41,17 @@ h2 {
   border: solid 0.8px #fcedd0;
   background-color:  #f8a23b;
 }
+h2 {
+  margin-top : 10px;
+  margin-bottom: 10px;
+}
 
 /*Add a card effect for articles - covers contents in left and right columns*/
 .card {
   margin: 20px 10px;
   border-bottom: solid 0.5px gray;
 }
+
 /* Create two unequal columns that floats next to each other */
 .leftcolumn {   
   overflow:auto; 
@@ -88,11 +91,50 @@ button:hover {
 .gallery {
   float: left;
   position: relative;
-  width: 33.33%;
-  height: 200px; /*ToBeUpdated reactive로 수정*/
+  width: 25%;
+  height: 12vw;
   border: solid 0.5px black;
   background-color: black;
   color: white;
+}
+@media screen and (min-width: 1300px) {
+  .leftcolumn
+  {
+    width: 30%;
+  }
+  .rightcolumn
+  {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .leftcolumn
+  {
+    width: 20%;
+  }
+  .rightcolumn
+  {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .gallery {
+    width: 33.3%;
+    height: 16vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery {
+    width: 50%;
+    height: 25vw;
+  }
+  .leftcolumn button
+  {
+     display: block;
+  }
+  .leftcolumn h3 {
+    margin: 10px;
+  }
 }
 .gallery h2 { 
   position: relative; 
