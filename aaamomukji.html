@@ -16,24 +16,25 @@
   <button style="float:right;height:30px;margin:0px 10px;">투표</button>
   <button style="float:right; height:30px;">RANDOM</button>
   <h2>내 태그</h2>
-   <button class="선택"><i class="fa-solid fa-fire"></i> 뜨거운 거</button>
+   <!-- <button class="선택"><i class="fa-solid fa-fire"></i> 뜨거운 거</button>
    <button class="선택"><i class="fa-solid fa-water"></i> 국물 요리</button>
    <button class="선택"><i class="fa-solid fa-c"></i> 중식</button>
    <button class="선택"><i class="fa-solid fa-k"></i> 한식</button>
    <button class="선택"><i class="fa-solid fa-a"></i> 동남아식</button>
-   <button class="제외"><i class="fa-solid fa-drumstick-bite"></i> 닭고기</button>
+   <button class="제외"><i class="fa-solid fa-drumstick-bite"></i> 닭고기</button> -->
+   <p id="p1"></p>
 </div>
 
 <div class="row">
 	<div class="leftcolumn">
      	<div class="card">
 	      <h3>온도</h3> 
-            <button class="선택"><i class="fa-solid fa-fire"></i> 뜨거운 거</button>  
-            <button><i class="fa-regular fa-snowflake"></i> 차가운 거</button>
+            <button id="bt1" onclick="myFunction(this.id)"><i class="fa-solid fa-fire"></i> 뜨거운 거</button>  
+            <button id="bt2" onclick="myFunction(this.id)"><i class="fa-regular fa-snowflake"></i> 차가운 거</button>
         </div> 
         <div class="card">
 	      <h3>맵기</h3>   
-            <button><i class="fa-solid fa-pepper-hot"></i> 매운 거</button>  
+            <button id="bt3" onclick="myFunction(this.id)"><i class="fa-solid fa-pepper-hot"></i> 매운 거</button>  
             <button><i class="fa-solid fa-baby"></i> 안 매운 거</button>
         </div> 
         <div class="card">
@@ -196,5 +197,6 @@
     </div>
   </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
